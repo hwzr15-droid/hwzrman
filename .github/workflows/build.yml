@@ -25,7 +25,7 @@ jobs:
       - name: Build with Buildozer
         run: |
           export ANDROID_HOME=/data/data/com.termux/files/home/.buildozer/android/platform/android-sdk
-          buildozer -v android debug
+          yes | buildozer -v android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
