@@ -5,7 +5,7 @@ package.domain = com.hwzrman
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy==2.3.0,kivymd==1.2.0,pillow,android
+requirements = python3,kivy,android
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE
@@ -14,4 +14,4 @@ android.minapi = 21
 android.ndk = 25b
 android.archs = arm64-v8a, armeabi-v7a
 android.allow_backup = True
-p4a.branch = master
+android.accept_sdk_license = True
