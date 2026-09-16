@@ -13,5 +13,3 @@ android.api = 31
 android.minapi = 21
 android.archs = arm64-v8a, armeabi-v7a
 android.allow_backup = True
-presplash.filename = %(source.dir)s/presplash.png
-icon.filename = %(source.dir)s/icon.png
