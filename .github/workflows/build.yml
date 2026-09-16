@@ -28,7 +28,12 @@ jobs:
 
       - name: Build APK
         run: |
-          yes | buildozer -v android debug 2>&1 | tail -200
+          yes | buildozer -v android debug 2>&1 | tail -100
+
+      - name: Check APK exists
+        run: |
+          ls -la bin/ || echo "No bin directory"
+          find . -name "*.apk" || echo "No APK found"
 
       - name: Upload APK
         if: always()
